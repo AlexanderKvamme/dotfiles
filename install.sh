@@ -26,6 +26,9 @@ fi
 echo "Updating homebrew..."
 brew update
 
+# install mas - https://github.com/mas-cli/mas
+brew install mas
+
 # setup git
 echo "Installing Git..."
 brew install git
@@ -37,6 +40,10 @@ git config --global user.email alexanderkvamme@gmail.com
 echo "Installing other brew stuff..."
 brew install trash
 brew install tree
+brew install tig
+brew install ack
+brew install jq
+#brew install sqlite??
 #brew install wget
 
 echo "Cleaning up brew"
@@ -66,23 +73,25 @@ fi
 #cd  /Users/bradparbs/.oh-my-zsh/themes
 #curl https://gist.githubusercontent.com/bradp/a52fffd9cad1cd51edb7/raw/#cb46de8e4c77beb7fad38c81dbddf531d9875c78/brad-muse.zsh-theme > #brad-muse.zsh-theme
 
-# install apps
+# install apps via cask
 # Apps
 apps=(
+  atom
   alfred
   bartender
   bettertouchtool
+  slack
   #cleanmymac
   dropbox
   google-chrome
   spotify
   #textexpander
-  vlc
   skype
   #transmission eller den jeg fant
   #onepassword
   #qlstephen
-  suspicious-package
+  #suspicious-package
+  vlc
 )
 
 # Install apps to /Applications
