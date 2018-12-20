@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+echo "SUCCESS"
+
+
 # Shortcuts
 alias d="cd ~/Documents"
 alias dl="cd ~/Downloads"
