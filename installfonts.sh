@@ -1,8 +1,9 @@
 brew tap caskroom/fonts
 FONTS=(
 	#font-inconsolidata
-	font-roboto
+	#font-roboto
 	#font-clear-sans
+	font-source-code-pro
 )
 brew cask install ${FONTS[@]}
 

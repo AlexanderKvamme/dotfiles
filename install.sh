@@ -76,6 +76,7 @@ fi
 # install apps via cask
 # Apps
 apps=(
+  Anki
   atom
   alfred
   bartender
@@ -105,7 +106,8 @@ brew cask alfred link
 brew cleanup
 
 
-
+#install from github
+#https://github.com/josh/Aware/
 
 
 #setup osx things
