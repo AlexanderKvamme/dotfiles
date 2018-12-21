@@ -79,6 +79,14 @@ fi
 #cd  /Users/bradparbs/.oh-my-zsh/themes
 #curl https://gist.githubusercontent.com/bradp/a52fffd9cad1cd51edb7/raw/#cb46de8e4c77beb7fad38c81dbddf531d9875c78/brad-muse.zsh-theme > #brad-muse.zsh-theme
 
+
+# install apps via mas
+mas install 866773894 #quiver
+mas install 1176895641 #spark
+mas install 441258766 #Magnet
+mas install 577085396 #Unclutter
+mas install 568494494 #Pocket
+
 # install apps via cask
 # Apps
 apps=(
@@ -94,7 +102,7 @@ apps=(
   spotify
   #textexpander
   skype
-  #transmission eller den jeg fant
+  transmission
   #onepassword
   #qlstephen
   #suspicious-package
