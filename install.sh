@@ -16,6 +16,12 @@ fi
 echo "Installing xcode-stuff"
 xcode-select --install
 
+# set up directories
+mkdir -p ~/Documents/workspaces/code/swift
+mkdir -p ~/Documents/workspaces/music
+mkdir -p ~/Documents/workspaces/design
+
+
 # Install Home-brew
 if test ! $(which brew); then
   echo "Installing homebrew..."
@@ -44,7 +50,7 @@ brew install tig
 brew install ack
 brew install jq
 #brew install sqlite??
-#brew install wget
+brew install wget
 
 echo "Cleaning up brew"
 brew cleanup
@@ -93,6 +99,7 @@ apps=(
   #qlstephen
   #suspicious-package
   vlc
+  rocket
 )
 
 # Install apps to /Applications
@@ -175,7 +182,7 @@ defaults write org.m0k.transmission WarningLegal -bool false
 defaults write org.m0k.transmission DownloadAsk -bool false
 
 #"Disable 'natural' (Lion-style) scrolling"
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
