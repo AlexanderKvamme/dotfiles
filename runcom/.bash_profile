@@ -1,10 +1,8 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-source .bashrc
-
-echo "SUCCESS"
-
+source ~/.bashrc
+echo "bash_profiles"
 
 # Shortcuts
 alias d="cd ~/Documents"
