@@ -2,18 +2,15 @@
 export PATH="$HOME/bin:$PATH";
 
 source ~/.bashrc
+source ~/.dotfiles/system/.alias
+source ~/.dotfiles/system/.functions
+
 echo "bash_profiles"
 
-# Shortcuts
-alias d="cd ~/Documents"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias yoga="cd ~/Movies/Yoga"
-alias m="cd ~/Movies"
-alias studier="cd ~/Documents/Bøker/Vil lese/bestem deg for en/Swift studier"
-
-alias g="git"
+for DOTFILE in `find /Users/alexander/.dotfiles/system`
+do
+  [ -f “$DOTFILE” ] && source “$DOTFILE”
+done
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

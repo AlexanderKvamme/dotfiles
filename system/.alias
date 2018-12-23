@@ -1,0 +1,17 @@
+alias la="ls -la"
+alias ld="ls -ld */"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias d="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/projects"
+alias yoga="cd ~/Movies/Yoga"
+alias m="cd ~/Movies"
+alias studier="cd ~/Documents/Bøker/Vil lese/bestem deg for en/Swift studier"
+alias it="cd ~/Documents/workspaces/code/swift/inteams-ios/"
+alias td="cd ~/Documents/workspaces/code/swift/todoapp/"
+
+alias g="git"
