@@ -107,6 +107,7 @@ apps=(
   #qlstephen
   #suspicious-package
   vlc
+  google-backup-and-sync
   rocket
 )
 
