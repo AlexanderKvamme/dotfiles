@@ -1,0 +1,2 @@
+:set termguicolors
+:syntax on

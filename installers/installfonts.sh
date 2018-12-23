@@ -3,7 +3,8 @@ FONTS=(
 	#font-inconsolidata
 	#font-roboto
 	#font-clear-sans
-	font-source-code-pro
+  font-fira-code
+  font-source-code-pro
 )
 brew cask install ${FONTS[@]}
 
