@@ -15,3 +15,7 @@ alias it="cd ~/Documents/workspaces/code/swift/inteams-ios/"
 alias td="cd ~/Documents/workspaces/code/swift/todoapp/"
 
 alias g="git"
+alias p="git push"
+alias s="git status"
+alias c="git commit"
+alias a="git add . -p"
