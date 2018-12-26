@@ -94,7 +94,7 @@ apps=(
   atom
   alfred
   bartender
-  bettertouchtool
+  #bettertouchtool # not paid for. maybe not needed
   slack
   #cleanmymac
   dropbox

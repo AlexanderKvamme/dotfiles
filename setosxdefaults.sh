@@ -31,8 +31,11 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # MIN: Tror denne funker
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+#defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 # Disable the sound effects on boot
 #sudo nvram SystemAudioVolume=" " #comment ut for å stoppe pwd request når jeg tester
