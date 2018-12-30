@@ -5,8 +5,6 @@ source ~/.bashrc
 source ~/.dotfiles/system/.alias
 source ~/.dotfiles/system/.functions
 
-echo "bash_profiles"
-
 for DOTFILE in `find /Users/alexander/.dotfiles/system`
 do
   [ -f “$DOTFILE” ] && source “$DOTFILE”

@@ -1,6 +1,5 @@
 # function to add git info to the input line
 
-echo "bashrc"
 prompt_git() {
 	local s='';
 	local branchName='';

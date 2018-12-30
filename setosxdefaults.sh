@@ -12,8 +12,11 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# disable itunes opening every time you connect a device
+defaults write com.apple.iTunesHelper ignore-devices 1
+
 # Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool false
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 #"Setting Dock to auto-hide and removing the auto-hiding delay"
 defaults write com.apple.dock autohide -bool true
@@ -70,7 +73,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 6
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 #"Setting trackpad & mouse speed to a reasonable number"
@@ -132,6 +135,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
+
+# may have to run this to make safari changes
+sudo chmod 700 ~/Library
 
 # Disable websites being able able to ask you to accept push notifications
 defaults write ~/Library/Preferences/com.apple.Safari CanPromptForPushNotifications -boolean NO
