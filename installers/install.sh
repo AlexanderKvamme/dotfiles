@@ -1,3 +1,4 @@
+
 cd ~
 if [ ! -d ".dotfiles" ]
 then
@@ -61,7 +62,7 @@ brew cleanup
 
 
 # download my .dotfiles if they dont exist
-if [ ! -d ".dotfiles" ] 
+if [ ! -d ".dotfiles" ]
 then
     echo "Copying dotfiles from Github"
     cd ~
@@ -80,35 +81,42 @@ fi
 #curl https://gist.githubusercontent.com/bradp/a52fffd9cad1cd51edb7/raw/#cb46de8e4c77beb7fad38c81dbddf531d9875c78/brad-muse.zsh-theme > #brad-muse.zsh-theme
 
 
-# install apps via mas
-mas install 866773894 #quiver
-mas install 1176895641 #spark
-mas install 441258766 #Magnet
-mas install 577085396 #Unclutter
-mas install 568494494 #Pocket
+# install apps via mas (Mac App Store CLI)
+mas install 866773894  # quiver
+mas install 1176895641 # spark
+mas install 441258766  # Magnet
+mas install 577085396  # Unclutter
+mas install 568494494  # Pocket
+mas install 1436953057 # Ghostery
 
 # install apps via cask
-# Apps
+# CASK APPS
 apps=(
   Anki
   atom
   alfred
   bartender
-  #bettertouchtool # not paid for. maybe not needed
   slack
-  #cleanmymac
   dropbox
   google-chrome
   spotify
-  #textexpander
   skype
   transmission
-  #onepassword
-  #qlstephen
-  #suspicious-package
   vlc
   google-backup-and-sync
   rocket
+  agenda
+	#quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
+	qlcolorcode
+	qlmarkdown
+	qlstephen
+	#textesxpander
+	#onepassword # consider
+  #qlstephen # consider
+  #suspicious-package # consider
+	#cleanmymac # consider this
+	#plex-media-server # whenever i need to stream
+  #bettertouchtool # I have not paid for. maybe not needed
 )
 
 # Install apps to /Applications
