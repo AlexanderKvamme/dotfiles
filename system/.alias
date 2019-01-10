@@ -16,10 +16,13 @@ alias it="cd ~/Documents/workspaces/code/swift/inteams-ios/"
 alias td="cd ~/Documents/workspaces/code/swift/todoapp/"
 
 alias g="git"
-alias p="git push"
-alias s="git status"
-alias c="git commit"
-alias a="git add . -p"
+alias gp="git push"
+alias gs="git status"
+alias gc="git commit"
+alias ga="git add . -p"
+alias gap="git add . -p"
+alias gane="git commit --amend --no-edit"
+alias gan="git commit --amend"
 
 
 alias cit_lordFresh="curl -Ss -H 'X-Auth-Token: 4G2SYr_pVp8xBPh4f6HtB8D-9urs1CEVDxswTw-ZmxZBA6xFqu9ShEEuD8xe9qWUaPygy5zUvwli02aW9WSWyg=='"                                                                                                                          
