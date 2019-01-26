@@ -6,4 +6,8 @@ git clone https://github.com/jasonrudolph/keyboard.git ~/.keyboard
 
 cd ~/.keyboard
 
-script/setup  
+script/setup
+
+cd ~/.dotfiles/
+rm /Users/alexander/.hammerspoon/keyboard/hyper-apps-defaults.lua
+cp hyper-apps-defaults.lua /Users/alexander/.hammerspoon/keyboard/hyper-apps-defaults.lua 
