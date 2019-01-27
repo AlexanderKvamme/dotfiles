@@ -15,6 +15,54 @@
                 },
                 "rules": [
                     {
+
+ {
+      "description": "Mouse button4 to  command + [",
+      "manipulators": [
+        {
+          "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Alt + Mouse Button 4 to command + ]",
+      "manipulators": [
+        {
+          "from": {
+            "pointing_button": "button4",
+            "modifiers": {
+              "optional": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+
+
+(
                         "manipulators": [
                             {
                                 "description": "Change right option to Hyper (i.e., command+control+option+shift)",
