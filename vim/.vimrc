@@ -1,6 +1,5 @@
 ":set termguicolors
-":colorscheme seoul256
-":colo seoul256
+:colorscheme seoul256
 :syntax on
 
 execute pathogen#infect()
@@ -29,3 +28,4 @@ let g:limelight_eop = '\ze\n^\s'
 " Highlighting priority (default: 10)
 "   Set it to -1 not to overrule hlsearch
 let g:limelight_priority = -1
+:set bs=2
