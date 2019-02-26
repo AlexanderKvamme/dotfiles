@@ -1,4 +1,6 @@
-:set termguicolors
+":set termguicolors
+":colorscheme seoul256
+":colo seoul256
 :syntax on
 
 execute pathogen#infect()
