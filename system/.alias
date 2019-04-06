@@ -1,9 +1,11 @@
+# general
 alias la="ls -la"
 alias ld="ls -ld */"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# shortcuts to folders
 alias docs="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -16,7 +18,9 @@ alias it="cd ~/Documents/workspaces/code/swift/inteams-ios/"
 alias td="cd ~/Documents/workspaces/code/swift/todoapp/"
 alias mvp="cd ~/Documents/workspaces/code/solarstein/mvpPrototype"
 alias .d="cd ~/.dotfiles/"
+alias j="cd ~/Dropbox/journals/"
 
+# git
 alias g="git"
 alias gp="git push"
 alias gs="git status"
@@ -33,6 +37,7 @@ alias s="git stats"
 alias d="git diff"
 alias a="git add . -p"
 
+# debugging inteams
 alias cit_lordFresh="curl -Ss -H 'X-Auth-Token: 4G2SYr_pVp8xBPh4f6HtB8D-9urs1CEVDxswTw-ZmxZBA6xFqu9ShEEuD8xe9qWUaPygy5zUvwli02aW9WSWyg=='"
 alias cit_alexander="curl -Ss -H 'X-Auth-Token: 7cmVo8wpQSdOa2uzpMKDSrO77stoSEHIRmCAV1-1e_7AvxP7_KT_j2N7QLa3dHrcAJF1YOHO-EPyAS8iNlOtEw=='"
 alias cit_zlurkh="curl -Ss -H 'X-Auth-Token: aafb7OY0h-SrH49ScE_JdZFihFs9QGVQv8l1JjCn_MxruoAE6IyxDUy64JkoK3rqWcxPgyC-wTmqMf3p4mFx9Q=='"
