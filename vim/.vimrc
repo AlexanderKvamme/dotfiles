@@ -1,5 +1,5 @@
 ":set termguicolors
-:colorscheme seoul256
+":colorscheme seoul256
 :syntax on
 
 execute pathogen#infect()
@@ -29,3 +29,10 @@ let g:limelight_eop = '\ze\n^\s'
 "   Set it to -1 not to overrule hlsearch
 let g:limelight_priority = -1
 :set bs=2
+
+" Alexander's Mappings to move lines up or down
+
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
