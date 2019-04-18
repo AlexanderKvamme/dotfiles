@@ -17,3 +17,22 @@ function settitle()
     local prompt=$(echo "$PS1" | sed -e 's/\\\[\\033\]0;.*\\007\\\]//')
     PS1="${title}${prompt}"
 }
+
+
+function donow() 
+{
+    vim ~/Dropbox/journals/donow.md
+}
+
+function dump()
+{
+    vim ~/Dropbox/journals/dump.md
+}
+
+function tdtd()
+{
+    settitle TDTD
+    vim ~/Dropbox/journals/TDTD.md
+    settitle TDTD
+}
+
