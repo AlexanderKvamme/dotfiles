@@ -87,25 +87,24 @@ mas install 1176895641 # spark
 mas install 441258766  # Magnet
 mas install 577085396  # Unclutter
 mas install 568494494  # Pocket
-mas install 1436953057 # Ghostery
 
 # install apps via cask
 # CASK APPS
 apps=(
   Anki
-  atom
+  # atom
   alfred
   bartender
   slack
   dropbox
   google-chrome
   spotify
-  skype
+  # skype
   transmission
   vlc
   google-backup-and-sync
   rocket
-  agenda
+  # agenda
 	#quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
 	qlcolorcode
 	qlmarkdown
