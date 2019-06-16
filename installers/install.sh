@@ -92,6 +92,7 @@ mas install 568494494  # Pocket
 # CASK APPS
 apps=(
   Anki
+  sensibleSideButtons
   # atom
   alfred
   bartender
