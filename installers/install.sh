@@ -87,15 +87,15 @@ mas install 1176895641 # spark
 mas install 441258766  # Magnet
 mas install 577085396  # Unclutter
 mas install 568494494  # Pocket
-
+mas install 1191449274 # ToothFairy
 # install apps via cask
 # CASK APPS
 apps=(
+  dozer
   Anki
   sensibleSideButtons
   # atom
   alfred
-  bartender
   slack
   dropbox
   google-chrome
