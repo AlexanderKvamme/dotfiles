@@ -20,6 +20,13 @@ alias mvp="cd ~/Documents/workspaces/code/solarstein/mvpPrototype"
 alias .d="cd ~/.dotfiles/"
 alias j="cd ~/Dropbox/journals/"
 
+# shortcuts to journals
+alias donow="cd ~/Dropbox/journals/donow.md"
+alias dump="cd ~/Dropbox/journals/dump.md"
+alias map="cd ~/Dropbox/journals/MAP.md"
+alias journal="cd ~/Dropbox/journals/dailyjournal.md"
+alias dailyjournal="cd ~/Dropbox/journals/dailyjournal.md"
+
 # git
 alias g="git"
 alias gp="git push"
