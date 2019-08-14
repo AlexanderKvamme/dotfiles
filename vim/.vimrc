@@ -12,6 +12,7 @@ let mapleader = ","
 ":set termguicolors
 ":colorscheme seoul256
 :syntax on
+set clipboard=unnamed
 
 execute pathogen#infect()
 
