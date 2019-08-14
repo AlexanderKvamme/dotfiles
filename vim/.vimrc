@@ -4,6 +4,7 @@ Plug 'fatih/vim-go'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 
