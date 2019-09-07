@@ -39,6 +39,7 @@ brew install mas
 # setup git
 echo "Installing Git..."
 brew install git
+brew install git bash-completion
 
 echo "Git config"
 git config --global user.name "Alexander Kvamme"
