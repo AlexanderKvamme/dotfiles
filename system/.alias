@@ -21,11 +21,11 @@ alias .d="cd ~/.dotfiles/"
 alias j="cd ~/Dropbox/journals/"
 
 # shortcuts to journals
-alias donow="cd ~/Dropbox/journals/donow.md"
-alias dump="cd ~/Dropbox/journals/dump.md"
-alias map="cd ~/Dropbox/journals/MAP.md"
-alias journal="cd ~/Dropbox/journals/dailyjournal.md"
-alias dailyjournal="cd ~/Dropbox/journals/dailyjournal.md"
+alias donow="vim ~/Dropbox/journals/donow.md"
+alias dump="vim ~/Dropbox/journals/dump.md"
+alias map="vim ~/Dropbox/journals/MAP.md"
+alias journal="vim ~/Dropbox/journals/dailyjournal.md"
+alias dailyjournal="vim ~/Dropbox/journals/dailyjournal.md"
 
 # git
 alias g="git"
@@ -49,3 +49,6 @@ alias cit_lordFresh="curl -Ss -H 'X-Auth-Token: 4G2SYr_pVp8xBPh4f6HtB8D-9urs1CEV
 alias cit_alexander="curl -Ss -H 'X-Auth-Token: 7cmVo8wpQSdOa2uzpMKDSrO77stoSEHIRmCAV1-1e_7AvxP7_KT_j2N7QLa3dHrcAJF1YOHO-EPyAS8iNlOtEw=='"
 alias cit_zlurkh="curl -Ss -H 'X-Auth-Token: aafb7OY0h-SrH49ScE_JdZFihFs9QGVQv8l1JjCn_MxruoAE6IyxDUy64JkoK3rqWcxPgyC-wTmqMf3p4mFx9Q=='"
 alias cit_cick="curl -Ss -H 'X-Auth-Token: 8KLcsERdFJdpxrSCicoS8I86epBfsbKUbovbXalYiKTnO8y1v9J9Ip7ym0jfshKfFpKPCvoLb8nrYCxUbmitOA=='"
+
+# other
+alias cf="fzf | pbcopy"
