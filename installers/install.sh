@@ -39,6 +39,7 @@ brew install mas
 # setup git
 echo "Installing Git..."
 brew install git
+brew install git bash-completion
 
 echo "Git config"
 git config --global user.name "Alexander Kvamme"
@@ -87,25 +88,25 @@ mas install 1176895641 # spark
 mas install 441258766  # Magnet
 mas install 577085396  # Unclutter
 mas install 568494494  # Pocket
-mas install 1436953057 # Ghostery
-
+mas install 1191449274 # ToothFairy
 # install apps via cask
 # CASK APPS
 apps=(
+  dozer
   Anki
-  atom
+  sensibleSideButtons
+  # atom
   alfred
-  bartender
   slack
   dropbox
   google-chrome
   spotify
-  skype
+  # skype
   transmission
   vlc
   google-backup-and-sync
   rocket
-  agenda
+  # agenda
 	#quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
 	qlcolorcode
 	qlmarkdown

@@ -19,6 +19,7 @@ alias td="cd ~/Documents/workspaces/code/swift/todoapp/"
 alias mvp="cd ~/Documents/workspaces/code/solarstein/mvpPrototype"
 alias .d="cd ~/.dotfiles/"
 alias j="cd ~/Dropbox/journals/"
+alias dj="vim ~/Dropbox/journals/dailyjournal.md"
 
 # shortcuts to journals
 alias donow="vim ~/Dropbox/journals/donow.md"

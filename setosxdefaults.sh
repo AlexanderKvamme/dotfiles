@@ -17,6 +17,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # disable itunes opening every time you connect a device
 defaults write com.apple.iTunesHelper ignore-devices 1
 
+# Enable showing build times in xcode
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
+
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
