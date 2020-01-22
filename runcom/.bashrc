@@ -54,11 +54,11 @@ prompt_git() {
 }
 
 # Color variables
-orange=$(tput setaf 166);
-yellow=$(tput setaf 228);
+orange=$(tput setaf 223);
+yellow=$(tput setaf 174);
 white=$(tput setaf 15);
 bold=$(tput bold);
-violet=$(tput setaf 61);
+violet=$(tput setaf 153);
 blue=$(tput setaf 33);
 reset=$(tput sgr0);
 
