@@ -53,6 +53,13 @@ prompt_git() {
 	fi;
 }
 
+# Alexander's FAC - Find And Copy
+function fac() {
+	find . -name "*${1}*" | tr -d '\n' | pbcopy
+	OUTPUT=$(find . -name "*${1}*" | tr -d '\n')
+	echo "${OUTPUT}"
+}
+
 # Color variables
 orange=$(tput setaf 223);
 yellow=$(tput setaf 174);
