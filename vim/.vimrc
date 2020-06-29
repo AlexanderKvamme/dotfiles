@@ -95,6 +95,7 @@ let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1
 set updatetime=100
 set ignorecase
+set number
 
 " colors
 let g:go_highlight_types = 1
@@ -111,3 +112,6 @@ let g:go_auto_sameids = 1
 
 " swap files
 set directory^=$HOME/.vim/swap//
+
+" Make line numbers less obtrusive
+hi LineNr term=bold cterm=bold ctermfg=DarkGrey guifg=Grey guibg=Grey90
