@@ -105,6 +105,7 @@ let g:go_highlight_operators = 0
 let g:go_highlight_build_constraints = 1
 "let g:go_decls_includes = "func,type"
 " tab as 4 spaces in vim in stead of 8
+set tabstop=4
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
 let g:go_auto_sameids = 1
 
