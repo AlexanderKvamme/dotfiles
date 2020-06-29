@@ -1,6 +1,7 @@
 " These are my plugs right here
 call plug#begin()
 Plug 'fatih/vim-go'
+Plug 'preservim/nerdtree'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'AndrewRadev/splitjoin.vim'
