@@ -1,6 +1,6 @@
 " These are my plugs right here
 call plug#begin()
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'preservim/nerdtree'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -49,7 +49,7 @@ nnoremap <S-Down> :m+<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
 
-# Disable keys
+" Disable keys
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>

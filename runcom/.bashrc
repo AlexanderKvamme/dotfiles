@@ -1,6 +1,9 @@
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # function to add git info to the input line
 
 prompt_git() {
