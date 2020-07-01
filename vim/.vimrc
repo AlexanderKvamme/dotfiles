@@ -2,9 +2,9 @@
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'preservim/nerdtree'
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'AndrewRadev/splitjoin.vim'
+"Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
@@ -14,8 +14,6 @@ let mapleader = ","
 ":colorscheme seoul256
 :syntax on
 set clipboard=unnamed
-
-execute pathogen#infect()
 
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
@@ -57,10 +55,9 @@ noremap <Right> <NOP>
 
 " Golang for vim
 
-" *** Pathogen
-"   http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen/
-call pathogen#infect()
-call pathogen#helptags()
+"""" Golang for vim
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 " Enable filetype plugins 
 filetype plugin on
@@ -72,7 +69,7 @@ map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 
 " bruk heller funksjonen under
-"autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 
@@ -97,6 +94,9 @@ set updatetime=100
 set ignorecase
 set number
 
+" Make line numbers less obtrusive
+hi LineNr term=bold cterm=bold ctermfg=DarkGrey guifg=Grey guibg=Grey90
+
 " colors
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
@@ -104,14 +104,10 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 0
 let g:go_highlight_build_constraints = 1
-"let g:go_decls_includes = "func,type"
-" tab as 4 spaces in vim in stead of 8
-set tabstop=4
+set tabstop=4 " tab as 4 spaces in vim in stead of 8
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
 let g:go_auto_sameids = 1
 
 " swap files
 set directory^=$HOME/.vim/swap//
 
-" Make line numbers less obtrusive
-hi LineNr term=bold cterm=bold ctermfg=DarkGrey guifg=Grey guibg=Grey90
