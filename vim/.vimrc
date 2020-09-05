@@ -2,12 +2,19 @@
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'preservim/nerdtree'
+Plug 'junegunn/goyo.vim'
 "Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-commentary'
 "Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
+" Gitgutter
+:highlight clear SignColumn
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 let mapleader = ","
 ":set termguicolors
@@ -40,20 +47,37 @@ let g:limelight_eop = '\ze\n^\s'
 let g:limelight_priority = -1
 :set bs=2
 
-" Alexander's Mappings to move lines up or down
 
+" tpope/vim-commentary
+" map <leader>/ Commentary<cr>
+" map <C-l> <plug>Commentary
+" map <leader>
+
+" Alexander's Mappings to move lines up or down
 nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
 
-" Disable keys
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" Insert new line without leaving normal mode
+:nmap <CR><CR> o<ESC>
 
-" Golang for vim
+
+" Navigating between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Open new splits to the right/below
+set splitbelow
+set splitright
+
+" Disable keys
+" noremap <Up> <NOP>
+" noremap <Down> <NOP>
+" noremap <Left> <NOP>
+" noremap <Right> <NOP>
 
 """" Golang for vim
 let g:go_def_mode='gopls'
@@ -105,6 +129,7 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 0
 let g:go_highlight_build_constraints = 1
 set tabstop=4 " tab as 4 spaces in vim in stead of 8
+set shiftwidth=4 
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
 let g:go_auto_sameids = 1
 
