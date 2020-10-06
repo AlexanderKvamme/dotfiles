@@ -3,6 +3,7 @@ bind "set show-all-if-ambiguous on"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export GOPRIVATE=github.com/solarstein
 
 # function to add git info to the input line
 
@@ -85,3 +86,4 @@ PS1+="\[${white}\]\$ "; # `$`
 export PS1;
 
 trap '[[ -t 1 ]] && tput sgr0' DEBUG # reset to terminal theme color after input
+source $HOME/.solarstein/dot-root

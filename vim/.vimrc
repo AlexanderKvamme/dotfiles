@@ -10,11 +10,19 @@ Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
+" Nerdtree
+let NERDTreeShowHidden=1
+
 " Gitgutter
 :highlight clear SignColumn
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+nmap <leader>h <Plug>(GitGutterNextHunk)
+nmap <leader>H <Plug>(gitGutterPrevHunk)
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 
 let mapleader = ","
 ":set termguicolors
