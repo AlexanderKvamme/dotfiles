@@ -7,6 +7,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# Xcode shortcuts
+alias x="open *xcodeproj"
+alias xcw="open *xcw*"
+
 # shortcuts to folders
 alias docs="cd ~/Documents"
 alias dl="cd ~/Downloads"
@@ -14,6 +18,8 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias yoga="cd ~/Movies/Yoga"
 alias ws="cd ~/Documents/workspaces"
+alias c="cd ~/Documents/workspaces/code"
+alias s="cd ~/Documents/workspaces/code/swift"
 alias m="cd ~/Movies"
 alias studier="cd ~/Documents/Bøker/Vil lese/bestem deg for en/Swift studier"
 alias it="cd ~/Documents/workspaces/code/swift/inteams-ios/"
@@ -43,7 +49,6 @@ alias gd="git diff"
 
 # shorties
 alias d="git diff"
-alias s="git stats"
 alias d="git diff"
 alias a="git add . -p"
 
