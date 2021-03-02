@@ -24,6 +24,9 @@ mkdir -p ~/Documents/workspaces/design
 
 # Install junegunn/vim-plug
 # - for installing vim plugins via a Plug command
+echo 'Trying to run vimPlugins.sh. Double check this is working'
+sh vimPlugins.sh
+sh installfonts.sh
 
 # Install Home-brew
 if test ! $(which brew); then
@@ -52,20 +55,13 @@ brew install trash
 brew install tree
 brew install tig
 brew install ack
+brew install fzf
 brew install jq
 #brew install sqlite??
 brew install wget
 
-# casks
-brew install --cask paletro
-
-
 echo "Cleaning up brew"
 brew cleanup
-
-
-
-
 
 
 # download my .dotfiles if they dont exist
@@ -89,40 +85,38 @@ fi
 
 
 # install apps via mas (Mac App Store CLI)
-mas install 866773894  # quiver
-mas install 1176895641 # spark
+mas install 866773894  # Quiver
+mas install 1176895641 # Spark
 mas install 441258766  # Magnet
 mas install 577085396  # Unclutter
 mas install 1191449274 # ToothFairy
+mas install 1287239339 # ColorSlurp
+
 # install apps via cask
 # CASK APPS
 apps=(
   dozer
-  #Anki
   sensibleSideButtons
-  # atom
   alfred
   slack
   dropbox
   google-chrome
   spotify
-  # skype
-  #transmission
   vlc
-  #google-backup-and-sync
   rocket
-  # agenda
-	#quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
-	qlcolorcode
-	qlmarkdown
-	qlstephen
-	#textesxpander
-	#onepassword # consider
-  #qlstephen # consider
-  #suspicious-package # consider
-	#cleanmymac # consider this
-	#plex-media-server # whenever i need to stream
-  #bettertouchtool # I have not paid for. maybe not needed
+  #quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
+  qlcolorcode
+  qlmarkdown
+  qlstephen
+  numi
+  onepassword
+  paletro
+  cleanshot
+  aware
+  # atom
+  #Anki
+  #google-backup-and-sync
+  #textesxpander
 )
 
 # Install apps to /Applications
@@ -131,13 +125,8 @@ echo "installing apps with Cask..."
 brew install --cask --appdir="/Applications" ${apps[@]}
 
 brew cask alfred link
-
-#brew cask cleanup
+brew cask cleanup
 brew cleanup
-
-
-#install from github
-#https://github.com/josh/Aware/
 
 
 #setup osx things
@@ -212,4 +201,5 @@ defaults write com.apple.dock mru-spaces -bool false
 
 killall Finder
 
+echo 'Consider manually installing TextSniper, Codespace'
 echo "Done!"
