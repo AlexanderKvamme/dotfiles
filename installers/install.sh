@@ -22,6 +22,8 @@ mkdir -p ~/Documents/workspaces/code/swift
 mkdir -p ~/Documents/workspaces/music
 mkdir -p ~/Documents/workspaces/design
 
+# Install junegunn/vim-plug
+# - for installing vim plugins via a Plug command
 
 # Install Home-brew
 if test ! $(which brew); then
