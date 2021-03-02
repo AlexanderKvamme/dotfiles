@@ -1,3 +1,5 @@
+echo 'running .dotfiles/system/.alias'
+
 # general
 alias la="ls -la"
 alias ld="ls -ld */"

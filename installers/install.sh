@@ -54,6 +54,10 @@ brew install jq
 #brew install sqlite??
 brew install wget
 
+# casks
+brew install --cask paletro
+
+
 echo "Cleaning up brew"
 brew cleanup
 
@@ -87,13 +91,12 @@ mas install 866773894  # quiver
 mas install 1176895641 # spark
 mas install 441258766  # Magnet
 mas install 577085396  # Unclutter
-mas install 568494494  # Pocket
 mas install 1191449274 # ToothFairy
 # install apps via cask
 # CASK APPS
 apps=(
   dozer
-  Anki
+  #Anki
   sensibleSideButtons
   # atom
   alfred
@@ -102,9 +105,9 @@ apps=(
   google-chrome
   spotify
   # skype
-  transmission
+  #transmission
   vlc
-  google-backup-and-sync
+  #google-backup-and-sync
   rocket
   # agenda
 	#quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
@@ -123,7 +126,7 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps with Cask..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask --appdir="/Applications" ${apps[@]}
 
 brew cask alfred link
 
@@ -145,7 +148,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 #"Enabling full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+x	efaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 #"Disabling press-and-hold for keys in favor of a key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
