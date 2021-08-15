@@ -9,7 +9,6 @@ alias ....="cd ../../.."
 alias x="open *xcodeproj"
 alias xcw="open *xcw*"
 
-<<<<<<< Updated upstream
 # Webstorm
 alias webstorm='open -a /Applications/WebStorm.app'
 
@@ -24,6 +23,7 @@ alias fisk="cd ~/Documents/workspaces/code/swift/fritidsfiske-app-ios"
 alias aktv="cd ~/Documents/workspaces/code/swift/AKTV"
 
 # shortcuts to folders
+alias dotfiles="cd ~/.dotfiles/"
 alias docs="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
