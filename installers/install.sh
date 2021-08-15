@@ -105,9 +105,6 @@ apps=(
   vlc
   rocket
   #quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
-  qlcolorcode
-  qlmarkdown
-  qlstephen
   numi
   onepassword
   paletro
@@ -123,6 +120,9 @@ apps=(
 # Default is: /Users/$user/Applications
 echo "installing apps with Cask..."
 brew install --cask --appdir="/Applications" ${apps[@]}
+
+echo "Remember to set your screensaver to fliqlo"
+brew install --cask fliqlo
 
 brew cask alfred link
 brew cask cleanup

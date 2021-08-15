@@ -2,16 +2,16 @@
 echo 'bash_profile running'
 export PATH="$HOME/bin:$PATH";
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/alexanderkvamme/.zprofile
-eval $(/opt/homebrew/bin/brew shellenv)
+#eval $(/opt/homebrew/bin/brew shellenv)
 
 source ~/.bashrc
 source ~/.dotfiles/system/.alias
 source ~/.dotfiles/system/.functions
 
-for DOTFILE in `find /Users/alexander/.dotfiles/system`
-do
-  [ -f “$DOTFILE” ] && source “$DOTFILE”
-done
+#for DOTFILE in `find /Users/alexander/.dotfiles/system/`
+#do
+ # [ -f “$DOTFILE” ] && source “$DOTFILE”
+#done
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

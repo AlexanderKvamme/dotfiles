@@ -1,9 +1,22 @@
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+# Convenience paths
+alias stretch='cd /Users/alexanderkvamme/Documents/workspaces/code/swift/Stretchapp'
+
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:~/Documents/workspaces/code/react/helseapp-devops/frontend
 export GOPRIVATE=github.com/solarstein
+export blifrisk=~/Documents/workspaces/code/react/helseapp-blifrisk-rn
+export happy=/Users/alexanderkvamme/Documents/workspaces/code/swift/Stretchapp
+export ANDROID_HOME=/Users/alexanderkvamme/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+# Fastlane variables
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export REACT_EDITOR=atom
 
 # function to add git info to the input line
 
@@ -87,3 +100,7 @@ export PS1;
 
 trap '[[ -t 1 ]] && tput sgr0' DEBUG # reset to terminal theme color after input
 source $HOME/.solarstein/dot-root
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

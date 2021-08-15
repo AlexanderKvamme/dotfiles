@@ -1,5 +1,3 @@
-echo 'running .dotfiles/system/.alias'
-
 # general
 alias la="ls -la"
 alias ld="ls -ld */"
@@ -10,6 +8,13 @@ alias ....="cd ../../.."
 # Xcode shortcuts
 alias x="open *xcodeproj"
 alias xcw="open *xcw*"
+
+# Webstorm
+alias webstorm='open -a /Applications/WebStorm.app'
+
+# Knowit - Storebrand
+alias nuke="rm -rf node_modules/ && npm install && cd ios && pod install && cd ../ && npx jetify && npm start --reset-cache"
+alias stb="cd ~/Documents/workspaces/code/react/helseapp-blifrisk-rn"
 
 # shortcuts to folders
 alias docs="cd ~/Documents"
@@ -49,14 +54,7 @@ alias gd="git diff"
 
 # shorties
 alias d="git diff"
-alias d="git diff"
 alias a="git add . -p"
-
-# debugging inteams
-alias cit_lordFresh="curl -Ss -H 'X-Auth-Token: 4G2SYr_pVp8xBPh4f6HtB8D-9urs1CEVDxswTw-ZmxZBA6xFqu9ShEEuD8xe9qWUaPygy5zUvwli02aW9WSWyg=='"
-alias cit_alexander="curl -Ss -H 'X-Auth-Token: 7cmVo8wpQSdOa2uzpMKDSrO77stoSEHIRmCAV1-1e_7AvxP7_KT_j2N7QLa3dHrcAJF1YOHO-EPyAS8iNlOtEw=='"
-alias cit_zlurkh="curl -Ss -H 'X-Auth-Token: aafb7OY0h-SrH49ScE_JdZFihFs9QGVQv8l1JjCn_MxruoAE6IyxDUy64JkoK3rqWcxPgyC-wTmqMf3p4mFx9Q=='"
-alias cit_cick="curl -Ss -H 'X-Auth-Token: 8KLcsERdFJdpxrSCicoS8I86epBfsbKUbovbXalYiKTnO8y1v9J9Ip7ym0jfshKfFpKPCvoLb8nrYCxUbmitOA=='"
 
 # other
 alias cf="fzf | pbcopy"
