@@ -246,6 +246,9 @@ defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Do
 defaults write org.m0k.transmission DownloadAsk -bool false
 defaults write org.m0k.transmission MagnetOpenAsk -bool false
 
+# Stop OSX from making .DS_Store files
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 #"Trash original torrent files"
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 

@@ -13,6 +13,9 @@ source ~/.dotfiles/system/.functions
  # [ -f “$DOTFILE” ] && source “$DOTFILE”
 #done
 
+# Make imagemagicks display work
+export DISPLAY=:0
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.

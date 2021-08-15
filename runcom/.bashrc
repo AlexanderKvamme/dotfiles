@@ -104,3 +104,11 @@ source $HOME/.solarstein/dot-root
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export DISPLAY=localhost:0.0
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/alexanderkvamme/google-cloud-sdk/path.bash.inc' ]; then . '/Users/alexanderkvamme/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/alexanderkvamme/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/alexanderkvamme/google-cloud-sdk/completion.bash.inc'; fi
