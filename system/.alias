@@ -8,6 +8,7 @@ alias ....="cd ../../.."
 # Xcode shortcuts
 alias x="open *xcodeproj"
 alias xcw="open *xcw*"
+alias derive="rm -rf ~/Library/Developer/Xcode/DerivedData"
 
 # Webstorm
 alias webstorm='open -a /Applications/WebStorm.app'
