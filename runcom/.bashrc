@@ -13,6 +13,13 @@ export happy=/Users/alexanderkvamme/Documents/workspaces/code/swift/Stretchapp
 export ANDROID_HOME=/Users/alexanderkvamme/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# Ruby for cocoapods
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+#For compilers to find ruby you may need to set:
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+
 # Fastlane variables
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -99,20 +106,14 @@ PS1+="\[${white}\]\$ "; # `$`
 export PS1;
 
 trap '[[ -t 1 ]] && tput sgr0' DEBUG # reset to terminal theme color after input
-source $HOME/.solarstein/dot-root
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export DISPLAY=localhost:0.0
 
-# The next line updates PATH for the Google Cloud SDK.
+# Google Cloud SDK.
 if [ -f '/Users/alexanderkvamme/google-cloud-sdk/path.bash.inc' ]; then . '/Users/alexanderkvamme/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
 if [ -f '/Users/alexanderkvamme/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/alexanderkvamme/google-cloud-sdk/completion.bash.inc'; fi
 
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completio
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

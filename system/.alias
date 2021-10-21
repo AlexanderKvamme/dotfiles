@@ -5,6 +5,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# Handy
+alias p="vim package.json"
+
 # Xcode shortcuts
 alias x="open *xcodeproj"
 alias xcw="open *xcw*"
@@ -16,6 +19,7 @@ alias webstorm='open -a /Applications/WebStorm.app'
 # Knowit - Storebrand
 alias stb="cd ~/Documents/workspaces/code/react/helseapp-blifrisk-rn"
 alias nuke="rm -rf node_modules/ && npm install && cd ios && pod install && cd ../ && npx jetify && npm start --reset-cache"
+alias ios='react-native run-ios --scheme blifrisk-dev'
 
 # Fritidsfiske
 alias fisk="cd ~/Documents/workspaces/code/swift/fritidsfiske-app-ios"
@@ -28,7 +32,6 @@ alias dotfiles="cd ~/.dotfiles/"
 alias docs="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
 alias yoga="cd ~/Movies/Yoga"
 alias ws="cd ~/Documents/workspaces"
 alias c="cd ~/Documents/workspaces/code"

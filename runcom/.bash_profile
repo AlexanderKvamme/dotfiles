@@ -47,6 +47,11 @@ done;
         . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 }
 
+# This is also for git autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # Add git completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
     # if not found in /usr/local/etc, try the brew --prefix location
