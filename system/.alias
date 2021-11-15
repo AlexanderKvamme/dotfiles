@@ -20,7 +20,7 @@ alias webstorm='open -a /Applications/WebStorm.app'
 alias stb="cd ~/Documents/workspaces/code/react/helseapp-blifrisk-rn"
 alias nuke="rm -rf node_modules/ && npm install && cd ios && pod install && cd ../ && npx jetify && npm start --reset-cache"
 alias ios='react-native run-ios --scheme blifrisk-dev'
-alias iosa='react-native run-ios --scheme blifrisk-dev --device "Alexander’s iPhone"':wq
+alias iosa='react-native run-ios --scheme blifrisk-dev --device "Alexander’s iPhone"'
 
 # Fritidsfiske
 alias fisk="cd ~/Documents/workspaces/code/swift/fritidsfiske-app-ios"
