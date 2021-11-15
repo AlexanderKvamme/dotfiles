@@ -8,6 +8,11 @@ source ~/.bashrc
 source ~/.dotfiles/system/.alias
 source ~/.dotfiles/system/.functions
 
+# Gems
+export GEM_HOME=~/.gem
+export GEM_PATH=~/.gem
+export PATH=$PATH:$HOME/.gem/bin
+
 #for DOTFILE in `find /Users/alexander/.dotfiles/system/`
 #do
  # [ -f “$DOTFILE” ] && source “$DOTFILE”
@@ -73,3 +78,5 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
