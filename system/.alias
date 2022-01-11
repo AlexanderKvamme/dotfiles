@@ -48,6 +48,7 @@ alias mvp="cd ~/Documents/workspaces/code/solarstein/mvpPrototype"
 alias .d="cd ~/.dotfiles/"
 alias j="cd ~/Dropbox/journals/"
 alias dj="vim ~/Dropbox/journals/dailyjournal.md"
+alias db="cd /Users/alexanderkvamme/Dropbox/"
 
 # shortcuts to journals
 alias donow="vim ~/Dropbox/journals/donow.md"
