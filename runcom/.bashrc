@@ -1,8 +1,12 @@
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+force_color_prompt=yes
+
 # Convenience paths
 alias stretch='cd /Users/alexanderkvamme/Documents/workspaces/code/swift/Stretchapp'
+
+###
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin

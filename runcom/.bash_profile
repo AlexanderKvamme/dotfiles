@@ -5,8 +5,8 @@ echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/alexanderkvamme/.zprofi
 #eval $(/opt/homebrew/bin/brew shellenv)
 
 source ~/.bashrc
-source ~/.dotfiles/system/.alias
-source ~/.dotfiles/system/.functions
+source ~/.dotfiles/system/alias
+source ~/.dotfiles/system/functions
 
 # Gems
 export GEM_HOME=~/.gem
