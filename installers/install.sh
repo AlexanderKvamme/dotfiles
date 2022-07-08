@@ -85,10 +85,7 @@ fi
 
 
 # install apps via mas (Mac App Store CLI)
-mas install 866773894  # Quiver
 mas install 1176895641 # Spark
-mas install 441258766  # Magnet
-mas install 577085396  # Unclutter
 mas install 1191449274 # ToothFairy
 mas install 1287239339 # ColorSlurp
 
@@ -110,7 +107,7 @@ apps=(
   paletro
   cleanshot
   aware
-  # atom
+  atom
   #Anki
   #google-backup-and-sync
   #textesxpander
@@ -127,7 +124,6 @@ brew install --cask fliqlo
 brew cask alfred link
 brew cask cleanup
 brew cleanup
-
 
 
 sh setOSXSettings
