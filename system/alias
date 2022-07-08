@@ -7,6 +7,7 @@ alias ....="cd ../../.."
 
 # Handy
 alias p="vim package.json"
+alias bw="cd /Users/alexanderkvamme/Documents/workspaces/code/swift/bedWeather"
 
 # Xcode shortcuts
 alias x="open *xcodeproj"
