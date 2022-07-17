@@ -1,13 +1,26 @@
-# general
-alias la="ls -la"
+alias a="vim ~/.dotfiles/system.alias"
+
+# Temp
+alias new="podspec-bump -w&&git add .&&git commit -m '...'&&git push"
+
+# general alias la="ls -la"
 alias ld="ls -ld */"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# Aktive prosjekter
+alias saa="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/saa-ios"
+alias sdk="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sec-id-proofing-ios-sdk"
+alias cool="cd ~/Documents/workspaces/code/chrome-extensions/cool-cat-autopilot"
+
 # Handy
 alias p="vim package.json"
 alias bw="cd /Users/alexanderkvamme/Documents/workspaces/code/swift/bedWeather"
+alias pf="vim Podfile"
+alias spec="vim *podspec"
+alias tunnel="ssh e776987@ssh.cosng.net -C -2 -N -D 127.0.0.1:12345"
+alias lock="vim podfile.lock"
 
 # Xcode shortcuts
 alias x="open *xcodeproj"
@@ -40,7 +53,7 @@ alias dt="cd ~/Desktop"
 alias yoga="cd ~/Movies/Yoga"
 alias ws="cd ~/Documents/workspaces"
 alias c="cd ~/Documents/workspaces/code"
-alias s="cd ~/Documents/workspaces/code/swift"
+#alias s="cd ~/Documents/workspaces/code/swift"
 alias m="cd ~/Movies"
 alias studier="cd ~/Documents/Bøker/Vil lese/bestem deg for en/Swift studier"
 alias it="cd ~/Documents/workspaces/code/swift/inteams-ios/"
@@ -60,6 +73,7 @@ alias dailyjournal="vim ~/Dropbox/journals/dailyjournal.md"
 alias did="vim ~/Dropbox/journals/did-do.md"
 
 # git
+alias co="git checkout -"
 alias g="git"
 alias gp="git push"
 alias gs="git status"
@@ -72,7 +86,7 @@ alias gd="git diff"
 
 # shorties
 alias d="git diff"
-alias a="git add . -p"
+alias pf="vim Podfile"
 
 # other
 alias cf="fzf | pbcopy"
