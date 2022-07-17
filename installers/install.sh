@@ -125,6 +125,8 @@ brew cask alfred link
 brew cask cleanup
 brew cleanup
 
+# Setup
+sh setupKarabiner.sh
 
 sh setOSXSettings
 echo 'Consider manually installing TextSniper, Codespace'
