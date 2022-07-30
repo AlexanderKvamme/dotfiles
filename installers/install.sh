@@ -77,13 +77,6 @@ else
     echo "Directory .dotfiles already exists."
 fi
 
-
-
-#echo "Setting up Oh My Zsh theme..."
-#cd  /Users/bradparbs/.oh-my-zsh/themes
-#curl https://gist.githubusercontent.com/bradp/a52fffd9cad1cd51edb7/raw/#cb46de8e4c77beb7fad38c81dbddf531d9875c78/brad-muse.zsh-theme > #brad-muse.zsh-theme
-
-
 # install apps via mas (Mac App Store CLI)
 mas install 1176895641 # Spark
 mas install 1191449274 # ToothFairy
@@ -101,16 +94,16 @@ apps=(
   spotify
   vlc
   rocket
-  #quick lock extensions - https://github.com/sindresorhus/quick-look-plugins
   numi
   onepassword
   paletro
   cleanshot
   aware
-  atom
+  cleanshot
   #Anki
   #google-backup-and-sync
   #textesxpander
+  fliqlo
 )
 
 # Install apps to /Applications
@@ -119,15 +112,12 @@ echo "installing apps with Cask..."
 brew install --cask --appdir="/Applications" ${apps[@]}
 
 echo "Remember to set your screensaver to fliqlo"
-brew install --cask fliqlo
 
 brew cask alfred link
 brew cask cleanup
 brew cleanup
 
 # Setup
-sh setupKarabiner.sh
-
 sh setOSXSettings
 echo 'Consider manually installing TextSniper, Codespace'
 echo "Done!"
