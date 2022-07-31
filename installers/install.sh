@@ -89,3 +89,8 @@ sh installCasks.sh
 sh setOSXSettings
 echo 'Consider manually installing TextSniper, Codespace'
 echo "Done!"
+
+# Install vim plugins
+echo "Installing vim plugins..."
+vim +PluginInstall +qall
+echo "Done!"
