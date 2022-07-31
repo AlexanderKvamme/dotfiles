@@ -82,40 +82,8 @@ mas install 1176895641 # Spark
 mas install 1191449274 # ToothFairy
 mas install 1287239339 # ColorSlurp
 
-# install apps via cask
-# CASK APPS
-apps=(
-  dozer
-  sensibleSideButtons
-  alfred
-  slack
-  dropbox
-  google-chrome
-  spotify
-  vlc
-  rocket
-  numi
-  onepassword
-  paletro
-  cleanshot
-  aware
-  cleanshot
-  #Anki
-  #google-backup-and-sync
-  #textesxpander
-  fliqlo
-)
-
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo "installing apps with Cask..."
-brew install --cask --appdir="/Applications" ${apps[@]}
-
-echo "Remember to set your screensaver to fliqlo"
-
-brew cask alfred link
-brew cask cleanup
-brew cleanup
+# Install casks
+sh installCasks.sh
 
 # Setup
 sh setOSXSettings
