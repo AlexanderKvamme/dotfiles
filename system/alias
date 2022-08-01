@@ -22,6 +22,9 @@ alias spec="vim *podspec"
 alias tunnel="ssh e776987@ssh.cosng.net -C -2 -N -D 127.0.0.1:12345"
 alias lock="vim podfile.lock"
 
+# Jobb
+alias jobb="cd ~/Documents/workspaces/code/jobb"
+
 # Xcode shortcuts
 alias x="open *xcodeproj"
 alias xcw="open *xcw*"
