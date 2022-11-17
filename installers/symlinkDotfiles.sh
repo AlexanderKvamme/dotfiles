@@ -1,4 +1,5 @@
 cd ~
-ln -s ".dotfiles/runcom/.bash_profile"
-ln -s ".dotfiles/runcom/.bashrc"
-ln -s ".dotfiles/vim/.vimrc"
+ln -s ".dotfiles/terminal/bash/.bash_profile"
+ln -s ".dotfiles/terminal/bash/.bashrc"
+ln -s ".dotfiles/terminal/zsh/.zshrc"
+ln -s ".dotfiles/terminal/vim/.vimrc"

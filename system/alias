@@ -1,10 +1,18 @@
-alias a="vim ~/.dotfiles/system.alias"
+alias a="vim ~/.dotfiles/system/alias"
 
 # Temp
 alias new="podspec-bump -w&&git add .&&git commit -m '...'&&git push"
 
+# TietoEvry prosjekt
+alias plus="cd MyIdentitySDKPlus"
+alias fupdate="rm -rf podfile.lock&&pod deintegrate&&pod cache clean 'IdentityProofingSDKPlus' --all&&pod install&&pod update IdentityProofingSDKPlus --no-repo-update"
+
+# Cocoapods
+alias psb="podspec-bump -w"
+
 # general alias la="ls -la"
 alias ld="ls -ld */"
+alias ll="ls -l"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -13,14 +21,18 @@ alias ....="cd ../../.."
 alias saa="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/saa-ios"
 alias sdk="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sec-id-proofing-ios-sdk"
 alias cool="cd ~/Documents/workspaces/code/chrome-extensions/cool-cat-autopilot"
+alias test="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/TESTPROJECT"
 
-# Handy
+# Handy ting og shortcuts
+alias sg="vim Swiftgen.yml"
 alias p="vim package.json"
 alias bw="cd /Users/alexanderkvamme/Documents/workspaces/code/swift/bedWeather"
 alias pf="vim Podfile"
 alias spec="vim *podspec"
 alias tunnel="ssh e776987@ssh.cosng.net -C -2 -N -D 127.0.0.1:12345"
 alias lock="vim podfile.lock"
+alias beep="afplay /System/Library/Sounds/Funk.aiff"
+alias hosts="vim /private/etc/hosts"
 
 # Jobb
 alias jobb="cd ~/Documents/workspaces/code/jobb"
@@ -74,6 +86,8 @@ alias map="vim ~/Dropbox/journals/MAP.md"
 alias journal="vim ~/Dropbox/journals/dailyjournal.md"
 alias dailyjournal="vim ~/Dropbox/journals/dailyjournal.md"
 alias did="vim ~/Dropbox/journals/did-do.md"
+alias jobb="vim ~/Dropbox/journals/jobb.md"
+
 
 # git
 alias co="git checkout -"
@@ -88,8 +102,9 @@ alias gan="git commit --amend"
 alias gd="git diff"
 
 # shorties
-alias d="git diff"
+alias d="cd ~/Library/Developer/Xcode/DerivedData"
 alias pf="vim Podfile"
+alias pi="pod install"
 
 # other
 alias cf="fzf | pbcopy"

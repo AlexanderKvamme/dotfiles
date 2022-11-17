@@ -31,7 +31,7 @@ export REACT_EDITOR=atom
 
 # function to add git info to the input line
 
-prompt_git() {
+function prompt_git() {
 	local s='';
 	local branchName='';
 
