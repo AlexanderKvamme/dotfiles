@@ -20,10 +20,13 @@ alias ....="cd ../../.."
 # Aktive prosjekter
 alias saa="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/saa-ios"
 alias sdk="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sec-id-proofing-ios-sdk"
+alias sam2="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sam2-ios"
 alias cool="cd ~/Documents/workspaces/code/chrome-extensions/cool-cat-autopilot"
 alias test="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/TESTPROJECT"
+alias telenor="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sec-telenor-id-proofing-ios"
 
 # Handy ting og shortcuts
+alias pll="pod lib lint --sources=https://gitlab.com/mobaibio-public/podspecs.git,trunk --no-clean --allow-warnings"
 alias sg="vim Swiftgen.yml"
 alias p="vim package.json"
 alias bw="cd /Users/alexanderkvamme/Documents/workspaces/code/swift/bedWeather"
@@ -33,6 +36,8 @@ alias tunnel="ssh e776987@ssh.cosng.net -C -2 -N -D 127.0.0.1:12345"
 alias lock="vim podfile.lock"
 alias beep="afplay /System/Library/Sounds/Funk.aiff"
 alias hosts="vim /private/etc/hosts"
+alias gen="sh generatexcframework.sh"
+#alias rc = "vim ~/.zshrc"
 
 # Jobb
 alias jobb="cd ~/Documents/workspaces/code/jobb"
@@ -40,6 +45,8 @@ alias jobb="cd ~/Documents/workspaces/code/jobb"
 # Xcode shortcuts
 alias x="open *xcodeproj"
 alias xcw="open *xcw*"
+alias xcp="open *.xcodeproj"
+alias proj="open *.xcodeproj"
 alias derive="rm -rf ~/Library/Developer/Xcode/DerivedData"
 
 # Webstorm
@@ -100,6 +107,7 @@ alias gap="git add . -p"
 alias gane="git commit --amend --no-edit"
 alias gan="git commit --amend"
 alias gd="git diff"
+alias qp="git add .&&git commit -m "..."&&git push"
 
 # shorties
 alias d="cd ~/Library/Developer/Xcode/DerivedData"
