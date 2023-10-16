@@ -1,3 +1,6 @@
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 
 cd ~
 if [ ! -d ".dotfiles" ]
@@ -19,8 +22,6 @@ xcode-select --install
 
 # set up directories
 mkdir -p ~/Documents/workspaces/code/swift
-mkdir -p ~/Documents/workspaces/music
-mkdir -p ~/Documents/workspaces/design
 
 # Install junegunn/vim-plug
 # - for installing vim plugins via a Plug command
@@ -58,6 +59,7 @@ brew install ack
 brew install fzf
 brew install jq
 #brew install sqlite??
+brew install microsoft-outlook
 brew install wget
 
 echo "Cleaning up brew"
@@ -71,9 +73,6 @@ then
     cd ~
     git clone git@github.com:AlexanderKvamme/dotfiles.git .dotfiles
     #cd .dotfiles
-    #sh symdotfiles
-    ln -s ".dotfiles/runcom/.bash_profile"
-else
     echo "Directory .dotfiles already exists."
 fi
 
@@ -83,14 +82,24 @@ mas install 1191449274 # ToothFairy
 mas install 1287239339 # ColorSlurp
 
 # Install casks
-sh installCasks.sh
+cd ~/.dotfiles
 
 # Setup
-sh setOSXSettings
 echo 'Consider manually installing TextSniper, Codespace'
 echo "Done!"
 
 # Install vim plugins
 echo "Installing vim plugins..."
 vim +PluginInstall +qall
+
+# Subinstallers
+sh subinstallers/setOSXSettings.sh
+sh subinstallers/installfonts.sh
+sh subinstallers/installCasks.sh
+sh subinstallers/installTerminalTheme.sh
+sh subinstallers/installShortcuts.sh
+sh subinstallers/vimPlugins.sh
+sh subinstallers/vimTheme.sh
+sh subinstallers/terminaltheme.sh
+sh subinstallers/installHyperButton.sh
 echo "Done!"
