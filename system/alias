@@ -18,12 +18,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # Aktive prosjekter
-alias saa="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/saa-ios"
-alias sdk="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sec-id-proofing-ios-sdk"
-alias sam2="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sam2-ios"
-alias cool="cd ~/Documents/workspaces/code/chrome-extensions/cool-cat-autopilot"
-alias test="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/TESTPROJECT"
-alias telenor="cd ~/Documents/workspaces/code/jobb/tietoevry/ios/sec-telenor-id-proofing-ios"
+alias saa="cd ~/Documents/workspaces/code/jobb/ios/idpr/saa-ios"
+alias sdk="cd ~/Documents/workspaces/code/jobb/ios/idpr/sec-id-proofing-ios-sdk"
+alias sam2="cd ~/Documents/workspaces/code/jobb/ios/sam/sam2-ios"
+alias telenor="cd ~/Documents/workspaces/code/jobb/ios/idpr/sec-telenor-id-proofing-ios"
 
 # Handy ting og shortcuts
 alias pll="pod lib lint --sources=https://gitlab.com/mobaibio-public/podspecs.git,trunk --no-clean --allow-warnings"
@@ -41,6 +39,7 @@ alias gen="sh generatexcframework.sh"
 
 # Jobb
 alias jobb="cd ~/Documents/workspaces/code/jobb"
+alias j="jobb"
 
 # Xcode shortcuts
 alias x="open *xcodeproj"
@@ -82,7 +81,6 @@ alias it="cd ~/Documents/workspaces/code/swift/inteams-ios/"
 alias td="cd ~/Documents/workspaces/code/swift/todoapp/"
 alias mvp="cd ~/Documents/workspaces/code/solarstein/mvpPrototype"
 alias .d="cd ~/.dotfiles/"
-alias j="cd ~/Dropbox/journals/"
 alias dj="vim ~/Dropbox/journals/dailyjournal.md"
 alias db="cd /Users/alexanderkvamme/Dropbox/"
 
@@ -93,8 +91,6 @@ alias map="vim ~/Dropbox/journals/MAP.md"
 alias journal="vim ~/Dropbox/journals/dailyjournal.md"
 alias dailyjournal="vim ~/Dropbox/journals/dailyjournal.md"
 alias did="vim ~/Dropbox/journals/did-do.md"
-alias jobb="vim ~/Dropbox/journals/jobb.md"
-
 
 # git
 alias co="git checkout -"

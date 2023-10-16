@@ -1,4 +1,3 @@
-# " These are my plugs right here
  call plug#begin()
  Plug 'preservim/nerdtree'
  Plug 'junegunn/goyo.vim'

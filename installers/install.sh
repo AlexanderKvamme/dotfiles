@@ -41,6 +41,9 @@ brew update
 
 # install mas - https://github.com/mas-cli/mas
 brew install mas
+brew install microsoft-teams
+brew install microsoft-outlook
+brew install slack
 
 # setup git
 echo "Installing Git..."
