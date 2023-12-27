@@ -5,4 +5,5 @@ brew install --cask keyboard-maestro
 rm ~/.config/karabiner/karabiner.json
 ln -s ~/.dotfiles/installers/karabiner.json ~/.config/karabiner/karabiner.json
 
-echo "TODO: Manually add Keyboard Maestro sync file located in Dropbox"
+echo "TODO: 1. Manually add Keyboard Maestro sync file located in Dropbox"
+echo "TODO: 2. get the complex modification from notion doc 'Karabiner' and paste it into karabiner elements"

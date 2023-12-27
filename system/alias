@@ -20,8 +20,11 @@ alias ....="cd ../../.."
 # Aktive prosjekter
 alias saa="cd ~/Documents/workspaces/code/jobb/ios/idpr/saa-ios"
 alias sdk="cd ~/Documents/workspaces/code/jobb/ios/idpr/sec-id-proofing-ios-sdk"
+alias sam="cd ~/Documents/workspaces/code/jobb/ios/sam"
 alias sam2="cd ~/Documents/workspaces/code/jobb/ios/sam/sam2-ios"
 alias telenor="cd ~/Documents/workspaces/code/jobb/ios/idpr/sec-telenor-id-proofing-ios"
+alias idpr="cd ~/Documents/workspaces/code/jobb/ios/idpr"
+alias oc="cd ~/Documents/workspaces/code/privat/swift/OnlyKcals"
 
 # Handy ting og shortcuts
 alias pll="pod lib lint --sources=https://gitlab.com/mobaibio-public/podspecs.git,trunk --no-clean --allow-warnings"

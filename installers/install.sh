@@ -44,6 +44,15 @@ brew install mas
 brew install microsoft-teams
 brew install microsoft-outlook
 brew install slack
+brew install spotify
+brew install discord
+brew install --cask rocket
+brew install --cask caffeine
+brew install --cask aware
+
+
+brew install gh
+brew install --cask cleanshot
 
 # setup git
 echo "Installing Git..."
